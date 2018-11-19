@@ -1,7 +1,7 @@
 # youtube_to_gif
 Tested on python 3.6.5
 
-install requirements with pip -r requirements.txt
+install requirements with `pip -r requirements.txt`.
 
 Takes a link from youtube and puts a clip starting at start and ending at end
 
