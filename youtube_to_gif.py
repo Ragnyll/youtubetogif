@@ -34,7 +34,7 @@ def create_gif_from_youtube_video(youtube_address, output_path, start, end):
         end_min, end_sec = int(end), float('%.2f' % ((end - int(end)) * 100))
         clip = (VideoFileClip('{}/{}'.format(temp_dir, listdir(temp_dir)[0]))
                 .subclip((start_min,start_sec),(end_min, end_sec)))
-        if path.basename(output_path) is '':
+        if path.basename(output_path) == '':
             clip.write_gif('{}/{}.gif'.format(path.dirname(output_path), datetime.now().strftime('%Y-%m-%d.%H.%M.%S')))
         else:
             clip.write_gif(output_path)
